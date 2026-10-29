@@ -13,9 +13,12 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "divaca": "cowsay Hola Munod"
   },
   "dependencies": {
     "colors": "^1.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
   }
 }
