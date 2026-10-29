@@ -37,4 +37,4 @@ if(age >= 18){
 const showUserInfo = (userName, userAge) => `The username is ${userName}, the user is ${userAge} years old`;
 
 console.log(showUserInfo("Santiago", 20));
-console.log(showUserInfo("Daniela", 30));
+console.log(showUserInfo("Claudia", 20));
