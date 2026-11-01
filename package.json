@@ -10,6 +10,8 @@
     "type": "git",
     "url": "git+https://github.com/ruizexel/nodejs-teorico-practica.git"
   },
+  "license": "ISC",
+  "author": "",
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
