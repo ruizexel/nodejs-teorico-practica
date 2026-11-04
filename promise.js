@@ -1,16 +1,21 @@
 const { readFile} = require('fs');
 
-const getText = (pathFile) => {
-    return new Promise(function (resolve, rejeact){
-        readFile(pathFile, 'utf-8', (err, date) => {
-            if(err){
-            rejeact(err);
-            }
+const {promisify} = require('util');
 
-            resolve(date);
-        });
-    });
-}
+
+const readFilePromise = promisify(readFile);
+
+// const getText = (pathFile) => {
+//     return new Promise(function (resolve, rejeact){
+//         readFile(pathFile, 'utf-8', (err, date) => {
+//             if(err){
+//             rejeact(err);
+//             }
+
+//             resolve(date);
+//         });
+//     });
+// }
 
 // sirve para cuando la funcion sale bien el then
 // en el caso que haya un error es con err
@@ -19,9 +24,9 @@ const getText = (pathFile) => {
 async function read(){
 
     try{
-        throw new Error("Este error no se esperaba");
+        
 
-        const result = await getText('./data/first.txt');
+        const result = await readFilePromise('./data/first.txt', 'utf-8');
 
         console.log(result)
     }catch(err){
