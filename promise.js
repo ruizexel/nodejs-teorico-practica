@@ -1,4 +1,4 @@
-const { readFile} = require('fs');
+const { readFile} = require('fs/promises');
 
 const {promisify} = require('util');
 
@@ -26,7 +26,7 @@ async function read(){
     try{
         
 
-        const result = await readFilePromise('./data/first.txt', 'utf-8');
+        const result = await readFile('./data/first.txt', 'utf-8');
 
         console.log(result)
     }catch(err){
