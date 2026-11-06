@@ -1,26 +1,21 @@
 {
-  "name": "course",
+  "name": "nodejs-teorico-practica",
   "version": "1.0.0",
   "description": "",
-  "homepage": "https://github.com/ruizexel/nodejs-teorico-practica#readme",
-  "bugs": {
-    "url": "https://github.com/ruizexel/nodejs-teorico-practica/issues"
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ruizexel/nodejs-teorico-practica.git"
   },
-  "license": "ISC",
+  "keywords": [],
   "author": "",
-  "type": "commonjs",
-  "main": "index.js",
-  "scripts": {
-    "divaca": "cowsay Hola Munod"
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/ruizexel/nodejs-teorico-practica/issues"
   },
-  "dependencies": {
-    "colors": "^1.4.0"
-  },
-  "devDependencies": {
-    "nodemon": "^3.1.14"
-  }
+  "homepage": "https://github.com/ruizexel/nodejs-teorico-practica#readme"
 }

@@ -2,21 +2,23 @@ function add(x, y){
     return x + y;
 }
 
-function subtract(x, y){
+export function subtract(x, y){
     return x - y;
 }
 
-function multiply(x, y){
+export function multiply(x, y){
     return x * y;
 }
 
-function divide(x, y){
+export function divide(x, y){
     return x / y;
 }
 
-module.exports = {
-    add,
-    subtract,
-    multiply,
-    divide,
-};
+// export default{
+//     add,
+//     subtract,
+//     multiply,
+//     divide,
+// };
+
+export default add;
